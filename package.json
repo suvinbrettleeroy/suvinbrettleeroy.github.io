@@ -1,9 +1,9 @@
 {
+  "homepage": "https://suvinbrettleeroy.github.io",
   "name": "suvin-brettlee-roy-b---portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://suvinbrettleeroy.github.io/Suvin_Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
