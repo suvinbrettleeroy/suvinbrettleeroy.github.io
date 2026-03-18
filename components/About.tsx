@@ -42,13 +42,13 @@ const About: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
                 Currently, I'm bridging the gap between theoretical AI and practical, high-impact user interfaces, always pushing for the perfect balance of form and function.
               </p>
               
-              <div className="pt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                  {[
-                   { label: 'Focus', val: 'AI & ML' },
-                   { label: 'Stack', val: 'AIM' },
+                   { label: 'Focus', val: 'AI & ML | Data Analyst' },
+                   { label: 'Domain', val: 'AI Automation and Full Stack' },
                    { label: 'Degree', val: 'B.Tech CSE (AI&DS)' }
                  ].map((stat, i) => (
-                   <div key={i} className={`p-8 rounded-[2rem] border transition-all border-glow hover:scale-105 ${isDarkMode ? 'bg-white/5 border-white/10 hover:border-white/50' : 'bg-white border-black/5 shadow-xl hover:border-black/30'}`}>
+                   <div key={i} className={`p-8 min-h-[210px] rounded-[2rem] border transition-all border-glow hover:scale-105 ${isDarkMode ? 'bg-white/5 border-white/10 hover:border-white/50' : 'bg-white border-black/5 shadow-xl hover:border-black/30'}`}>
                       <div className="text-[10px] opacity-40 uppercase tracking-[0.3em] font-black mb-2">{stat.label}</div>
                       <div className="text-xl font-black">{stat.val}</div>
                    </div>
