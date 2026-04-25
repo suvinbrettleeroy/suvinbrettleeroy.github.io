@@ -65,8 +65,8 @@ const Hero: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
               >
                 Get In Touch
               </a>
-              <a 
-                href="/Suvin-Resume.pdf" 
+              <a
+                href="/Suvin-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`px-12 py-5 rounded-full border font-black uppercase tracking-[0.15em] text-sm transition-all hover:scale-105 flex items-center justify-center min-w-[200px] backdrop-blur-md ${
@@ -93,6 +93,18 @@ const Hero: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
                 className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-[2.5s] ease-out grayscale contrast-125 brightness-75 hover:grayscale-0 hover:contrast-100 hover:brightness-100"
               />
               <div className={`absolute inset-0 bg-gradient-to-t ${isDarkMode ? 'from-black/50' : 'from-white/50'} via-transparent to-transparent opacity-30 group-hover:opacity-0 transition-opacity duration-700`}></div>
+            </div>
+
+            <div
+              className={`mt-8 max-w-[520px] rounded-3xl border px-6 py-5 backdrop-blur-md shadow-xl transition-all duration-700 hover:-translate-y-1 ${
+                isDarkMode
+                  ? 'border-white/10 bg-white/5 text-white/90'
+                  : 'border-slate-900/10 bg-white/80 text-slate-800'
+              }`}
+            >
+              <p className="text-sm md:text-base leading-relaxed tracking-[0.01em]">
+                Bridging the gap between raw data and reality by building AI-powered applications. I analyze patterns, automate workflows, and develope full-stack solutions that scale.
+              </p>
             </div>
           </div>
         </div>

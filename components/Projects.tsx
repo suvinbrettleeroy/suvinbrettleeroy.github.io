@@ -21,6 +21,20 @@ const Projects: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
       )
     },
     {
+      title: 'PATHGUIDE: Smart Navigation & Assistance System',
+      type: 'AI & Full Stack • 2025',
+      desc: 'An intelligent navigation and guidance system designed to provide real-time path recommendations using location data, user preferences, and environmental conditions. PathGuide enhances travel efficiency by delivering optimized routes, safety insights, and voice-based assistance.',
+      initials: 'PG',
+      grad: isDarkMode ? 'from-white/15 via-white/5 to-transparent' : 'from-black/15 via-black/5 to-transparent',
+      tags: ['Python', 'Machine Learning', 'Flask', 'React', 'GPS APIs'],
+      link: '#',
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 2a7 7 0 017 7c0 4.5-7 13-7 13S5 13.5 5 9a7 7 0 017-7zm0 10a3 3 0 100-6 3 3 0 000 6z" />
+        </svg>
+      )
+    },
+    {
       title: 'Image Classification System',
       type: 'Machine Learning • 2024',
       desc: 'Advanced CNN-based architecture designed for high-accuracy categorical identification. Features an automated data augmentation pipeline and real-time inference capabilities.',
