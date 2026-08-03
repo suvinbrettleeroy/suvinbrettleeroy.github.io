@@ -17,7 +17,7 @@ const Projects: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
 
   const projects = [
     {
-      title: 'DeepTwinMed: AI-Powered Medical Education Platform',
+      title: 'DeepTwinMed: An Intelligent AI-Powered Digital Twin Platform for Personalized Medical Education',
       type: 'Generative AI • AI Agents • RAG',
       duration: 'Jul 2026 – Present',
       desc: 'An intelligent medical education platform that combines Generative AI, AI Agents, Retrieval-Augmented Generation (RAG), and Large Language Models to create personalized learning experiences, evaluate student performance, and provide AI-driven clinical guidance through an interactive digital twin ecosystem.',
@@ -32,7 +32,7 @@ const Projects: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
       )
     },
     {
-      title: 'FARM-AI: Smart Agriculture',
+      title: 'FARM AI - Farming AI Realtime Management',
       type: 'AI & Full Stack',
       duration: 'Jul 2025 – Nov 2025',
       desc: 'An end-to-end intelligent recommendation engine leveraging soil parameters and historical weather patterns to optimize crop yields through precision farming algorithms.',
@@ -47,7 +47,7 @@ const Projects: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
       )
     },
     {
-      title: 'PATHGUIDE: Smart Navigation & Assistance System',
+      title: 'PathGuide: AI-Powered Career and Government Exam Guidance Platform',
       type: 'AI & Full Stack',
       duration: 'Nov 2025 – Apr 2026',
       desc: 'An intelligent navigation and guidance system designed to provide real-time path recommendations using location data, user preferences, and environmental conditions. PathGuide enhances travel efficiency by delivering optimized routes, safety insights, and voice-based assistance.',
@@ -94,7 +94,7 @@ const Projects: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
   ];
 
   const projectDetails: Record<string, ProjectDetail> = useMemo(() => ({
-    'DeepTwinMed: AI-Powered Medical Education Platform': {
+    'DeepTwinMed: An Intelligent AI-Powered Digital Twin Platform for Personalized Medical Education': {
       title: 'DeepTwinMed: An Intelligent AI-Powered Digital Twin Platform for Personalized Medical Education',
       overview: 'DeepTwinMed is an AI-powered medical education platform designed to enhance the learning experience of medical students through intelligent technologies. The platform integrates Generative AI, AI Agents, Machine Learning, and Retrieval-Augmented Generation (RAG) to provide personalized learning, AI-assisted clinical reasoning, and performance evaluation. Its goal is to bridge the gap between theoretical medical education and real-world clinical practice by offering adaptive, data-driven learning support.',
       problemStatement: 'Traditional medical education often provides the same learning experience to every student, making it difficult to identify individual strengths and learning gaps. Students also receive limited personalized guidance and feedback during their academic journey.',
@@ -117,7 +117,7 @@ const Projects: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
       ],
       outcome: 'DeepTwinMed demonstrates how modern AI technologies can create an intelligent medical learning environment that supports personalized education, improves learning outcomes, and assists students throughout their academic journey.'
     },
-    'FARM-AI: Smart Agriculture': {
+    'FARM AI - Farming AI Realtime Management': {
       title: 'FARM-AI: Smart Agriculture Platform',
       overview: 'FARM-AI is an intelligent agriculture platform that helps farmers make informed farming decisions using Artificial Intelligence and Machine Learning. The system analyzes soil characteristics, environmental conditions, and weather information to recommend suitable crops and improve farming productivity.',
       problemStatement: 'Farmers often struggle to select the right crops because of changing weather conditions, soil quality, and limited access to data-driven agricultural insights.',
@@ -140,7 +140,7 @@ const Projects: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
       ],
       outcome: 'The project provides intelligent crop recommendations that support precision farming and help farmers improve productivity through data-driven decision-making.'
     },
-    'PATHGUIDE: Smart Navigation & Assistance System': {
+    'PathGuide: AI-Powered Career and Government Exam Guidance Platform': {
       title: 'PathGuide: AI Career Guidance System',
       overview: 'PathGuide is an AI-powered career guidance platform that assists students in choosing suitable career paths based on their interests, skills, and academic background. The platform also provides government exam guidance, learning roadmaps, and career planning resources.',
       problemStatement: 'Many students face uncertainty when selecting careers because they lack personalized guidance, structured learning plans, and access to reliable career information.',

@@ -5,27 +5,21 @@ import useScrollReveal from '../hooks/useScrollReveal';
 interface FormState {
   name: string;
   email: string;
-  location: string;
-  budget: string;
-  subject: string;
   message: string;
 }
 
 interface FormErrors {
   name?: string;
   email?: string;
-  subject?: string;
   message?: string;
 }
 
 const Contact: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
   const revealRef = useScrollReveal();
+  const recipientEmail = 'suvinbrettleeroy@gmail.com';
   const [formData, setFormData] = useState<FormState>({
     name: '',
     email: '',
-    location: '',
-    budget: '',
-    subject: '',
     message: '',
   });
   
@@ -42,7 +36,7 @@ const Contact: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
 
   const validateField = (name: string, value: string) => {
     let error = '';
-    if (['name', 'email', 'subject', 'message'].includes(name) && !value.trim()) {
+    if (['name', 'email', 'message'].includes(name) && !value.trim()) {
       error = 'This field is required';
     } else if (name === 'email' && value && !validateEmail(value)) {
       error = 'Please enter a valid email address';
@@ -77,15 +71,35 @@ const Contact: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-      setTouched({ name: true, email: true, subject: true, message: true });
+      setTouched({ name: true, email: true, message: true });
       return;
     }
 
     setIsSubmitting(true);
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      const response = await fetch(`https://formsubmit.co/ajax/${recipientEmail}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `Portfolio Contact: ${formData.name}`,
+          _replyto: formData.email,
+          _template: 'table',
+          _captcha: 'false',
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
       setSubmitStatus('success');
-      setFormData({ name: '', email: '', location: '', budget: '', subject: '', message: '' });
+      setFormData({ name: '', email: '', message: '' });
       setTouched({});
       setErrors({});
     } catch (err) {
@@ -152,7 +166,7 @@ const Contact: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
                 Let's discuss <br /> your project
               </h2>
               <p className="text-xl opacity-50 max-w-md font-medium leading-relaxed pt-4">
-                I'm always open to discussing product design work, development roles, or partnership opportunities.
+                Share your name, email, and message. It will be sent directly to my inbox.
               </p>
             </div>
 
@@ -205,7 +219,7 @@ const Contact: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
                     <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" /></svg>
                   </div>
                   <h3 className="text-4xl font-black tracking-tighter mb-4">Transmission Success</h3>
-                  <p className="text-lg opacity-50 font-medium mb-12">Your message has been received. Expect a response shortly.</p>
+                  <p className="text-lg opacity-50 font-medium mb-12">Your message has been sent directly to my email. Expect a response shortly.</p>
                   <button onClick={() => setSubmitStatus('idle')} className="font-black uppercase tracking-widest text-xs hover:underline decoration-2 underline-offset-8 opacity-40 hover:opacity-100">Return to console</button>
                 </div>
               )}
