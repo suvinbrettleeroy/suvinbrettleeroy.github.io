@@ -1,21 +1,105 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img width="1200" height="475" alt="Portfolio Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+# 🚀 Suvin Portfolio
+
+### AI Engineer | Generative AI Engineer | AI Agent Developer
+
+Building AI-powered applications that transform ideas into practical, scalable solutions using Generative AI, AI Agents, Machine Learning, Data Analytics, and modern software engineering.
+
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## 📖 About
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Z5qhhJJqkU804tM3l7Svr3cr02xgGEqH
+Welcome to my personal portfolio repository. This portfolio showcases my journey as an **AI Engineer**, featuring my technical skills, internship experience, AI projects, and the technologies I use to build intelligent, real-world applications.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## ✨ Features
 
+- 🎨 Modern & Responsive UI
+- 👨‍💻 About Me
+- 🛠️ Skills & Technologies
+- 💼 Internship Experience
+- 🚀 Featured Projects
+- 📬 Contact Section
+- ✨ Smooth Animations
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-# Suvin_Portfolio
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- TypeScript
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Gemini API
+
+### Development Tools
+- Git & GitHub
+- VS Code
+- npm
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS)
+- npm
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/Suvin_Portfolio.git
+```
+
+### Navigate to the Project
+
+```bash
+cd Suvin_Portfolio
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Configure Environment Variables
+
+Create a `.env.local` file and add your API key.
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+### Start the Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📬 Connect With Me
+
+- 💼 LinkedIn
+- 💻 GitHub
+- 📧 Email
+
+---
+
+<div align="center">
+
+⭐ If you like this project, consider giving it a star!
+
+Made with ❤️ by **Suvin Brettlee Roy**
+
+</div>
