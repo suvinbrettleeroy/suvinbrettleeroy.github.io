@@ -7,43 +7,39 @@ const Skills: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
 
   const skillGroups = [
     {
-      title: 'AI & Machine Learning',
+      title: 'Programming',
       skills: [
-        { name: 'Python', value: 85 },
-        { name: 'Machine Learning', value: 85 },
-        { name: 'Deep Learning', value: 75 },
-        { name: 'Generative AI', value: 85 },
-        { name: 'AI Agents', value: 80 }
+        { name: 'Python', value: 95 },
+        { name: 'C / C++', value: 75 },
+        { name: 'SQL', value: 85 },
+        { name: 'JavaScript', value: 70 }
       ]
     },
     {
-      title: 'Data Analytics',
+      title: 'Data Science',
       skills: [
-        { name: 'Data Analysis', value: 85 },
-        { name: 'Power BI', value: 90 },
-        { name: 'Pandas', value: 85 },
-        { name: 'NumPy', value: 82 },
-        { name: 'Microsoft Excel', value: 85 }
+        { name: 'Data Analysis', value: 92 },
+        { name: 'Machine Learning', value: 88 },
+        { name: 'TensorFlow', value: 55 },
+        { name: 'Pandas', value: 90 }
       ]
     },
     {
-      title: 'Programming & Web',
+      title: 'Web Dev',
       skills: [
-        { name: 'HTML5', value: 90 },
-        { name: 'CSS3', value: 88 },
-        { name: 'JavaScript', value: 80 },
-        { name: 'React.js', value: 75 },
-        { name: 'Flask', value: 82 }
+        { name: 'React.js', value: 80 },
+        { name: 'Node.js', value: 65 },
+        { name: 'HTML/CSS', value: 95 },
+        { name: 'Flask', value: 70 }
       ]
     },
     {
-      title: 'Tools & Technologies',
+      title: 'Architecture',
       skills: [
-        { name: 'Git & GitHub', value: 80 },
-        { name: 'VS Code', value: 95 },
-        { name: 'Jupyter Notebook', value: 90 },
-        { name: 'Google Colab', value: 90 },
-        { name: 'Prompt Engineering', value: 88 }
+        { name: 'System Design', value: 75 },
+        { name: 'Git/GitHub', value: 85 },
+        { name: 'Power BI', value: 80 },
+        { name: 'Jupyter', value: 95 }
       ]
     }
   ];

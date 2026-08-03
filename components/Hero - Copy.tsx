@@ -40,12 +40,12 @@ const Hero: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
             <div className="flex items-center gap-5">
                <div className={`w-1.5 h-14 ${isDarkMode ? 'bg-white' : 'bg-black'} rounded-full pulse-glow`}></div>
                <p className="text-2xl md:text-4xl font-bold tracking-tight opacity-90 max-w-2xl">
-                AI Engineer Specializing in Generative AI • AI Agents • Machine Learning • Data Analytics • Full Stack Development
+                Data Analyst | Machine Learning Engineer | Full Stack Engineer
               </p>
             </div>
             
             <p className="text-xl md:text-2xl italic opacity-50 max-w-xl leading-relaxed font-light">
-              "Building scalable AI-powered products that transform ideas into intelligent solutions"
+              "Exploring data analytics, machine learning, and full stack development to transform insights into intelligent solutions."
             </p>
             
             <div className="flex flex-wrap gap-5 pt-4">
@@ -103,7 +103,7 @@ const Hero: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
               }`}
             >
               <p className="text-sm md:text-base leading-relaxed tracking-[0.01em]">
-                Building AI-powered applications that turn ideas into practical, scalable solutions across generative AI, automation, and full-stack development.
+                Bridging the gap between raw data and reality by building AI-powered applications. I analyze patterns, automate workflows, and develope full-stack solutions that scale.
               </p>
             </div>
           </div>

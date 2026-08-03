@@ -16,7 +16,7 @@ const About: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
               <div className={`absolute -inset-4 ${isDarkMode ? 'bg-white' : 'bg-black'} opacity-5 blur-3xl rounded-[3rem] transition-opacity group-hover:opacity-10`}></div>
               <div className={`relative aspect-square rounded-full overflow-hidden shadow-2xl border transition-all duration-700 hover:-translate-y-2 ${isDarkMode ? 'border-white/10 bg-black/40' : 'border-black/5 bg-white'}`}>
                 <img
-                  src="/formal-black-and-white.png"
+                  src="/Suv.jpg"
                   alt="Suvin Brettlee Roy B Profile"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 grayscale contrast-125 brightness-75 hover:grayscale-0 hover:contrast-100 hover:brightness-100"
                 />
@@ -33,23 +33,20 @@ const About: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
             
             <div className={`space-y-8 text-xl md:text-2xl font-light leading-relaxed ${isDarkMode ? 'text-white/70' : 'text-slate-600'}`}>
               <p className={`font-bold text-3xl md:text-4xl ${isDarkMode ? 'text-white' : 'text-black'}`}>
-                I'm a final-year B.Tech Computer Science and Engineering (Artificial Intelligence & Data Science) student passionate about building intelligent systems that solve real-world problems.
+                I'm a third-year Computer Science and Engineering student specializing in Artificial Intelligence and Data Science.
               </p>
               <p>
-                My interests span <strong>Generative AI, AI Agents, Machine Learning, Data Analytics, Automation, and Full Stack Development</strong>, where I focus on creating scalable, user-centric applications.
+                My journey is fueled by a relentless passion for <strong>data analytics, machine learning, and full-stack engineering</strong>. I don't just build software; I create intelligent experiences that solve real-world complexities.
               </p>
               <p>
-                I enjoy transforming complex ideas into practical solutions by combining modern AI technologies with clean software engineering. From developing AI-powered applications and intelligent workflows to building full-stack systems, I continuously explore emerging technologies and apply them to meaningful projects.
-              </p>
-              <p>
-                I'm committed to continuous learning, innovation, and creating impactful products that bridge the gap between research and real-world applications.
+                Currently, I'm bridging the gap between theoretical AI and practical, high-impact user interfaces, always pushing for the perfect balance of form and function.
               </p>
               
               <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                  {[
-                   { label: 'Focus', val: 'Generative AI | AI Agents | Machine Learning | Data Analytics' },
-                   { label: 'Domain', val: 'AI Engineering | Intelligent Automation | Full Stack Development' },
-                   { label: 'Degree', val: 'B.Tech CSE(AI&DS)' }
+                   { label: 'Focus', val: 'AI & ML | Data Analyst' },
+                   { label: 'Domain', val: 'AI Automation and Full Stack' },
+                   { label: 'Degree', val: 'B.Tech CSE (AI&DS)' }
                  ].map((stat, i) => (
                    <div key={i} className={`p-8 min-h-[210px] rounded-[2rem] border transition-all border-glow hover:scale-105 ${isDarkMode ? 'bg-white/5 border-white/10 hover:border-white/50' : 'bg-white border-black/5 shadow-xl hover:border-black/30'}`}>
                       <div className="text-[10px] opacity-40 uppercase tracking-[0.3em] font-black mb-2">{stat.label}</div>
