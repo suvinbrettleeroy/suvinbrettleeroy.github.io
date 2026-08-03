@@ -1,27 +1,25 @@
-# 🚀 Suvin Portfolio
+# 🚀 Suvin Brettlee Roy Portfolio
 
-### AI Engineer | Generative AI Engineer | AI Agent Developer
+### AI Engineer | Generative AI | AI Agents | Machine Learning | Data Analytics | Full Stack Development
 
-Building AI-powered applications that transform ideas into practical, scalable solutions using Generative AI, AI Agents, Machine Learning, Data Analytics, and modern software engineering.
-
-</div>
+A modern personal portfolio showcasing my projects, technical skills, internship experience, and journey as an aspiring AI Engineer.
 
 ---
 
 ## 📖 About
 
-Welcome to my personal portfolio repository. This portfolio showcases my journey as an **AI Engineer**, featuring my technical skills, internship experience, AI projects, and the technologies I use to build intelligent, real-world applications.
+Welcome to my personal portfolio repository. This portfolio highlights my experience, projects, technical skills, and achievements in Artificial Intelligence, Machine Learning, Data Analytics, and Full Stack Development. It serves as a central place to showcase my work, learning journey, and professional growth.
 
 ---
 
 ## ✨ Features
 
-- 🎨 Modern & Responsive UI
+- 🎨 Modern & Responsive User Interface
 - 👨‍💻 About Me
-- 🛠️ Skills & Technologies
+- 🛠️ Technical Arsenal
 - 💼 Internship Experience
 - 🚀 Featured Projects
-- 📬 Contact Section
+- 📬 Contact Section- Let's discuss your project
 - ✨ Smooth Animations
 
 ---
@@ -32,10 +30,6 @@ Welcome to my personal portfolio repository. This portfolio showcases my journey
 - React.js
 - TypeScript
 - Tailwind CSS
-
-### Backend
-- Node.js
-- Gemini API
 
 ### Development Tools
 - Git & GitHub
@@ -69,18 +63,16 @@ cd Suvin_Portfolio
 npm install
 ```
 
-### Configure Environment Variables
-
-Create a `.env.local` file and add your API key.
-
-```env
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-```
-
-### Start the Development Server
+### Run the Development Server
 
 ```bash
 npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:5173
 ```
 
 ---
@@ -95,7 +87,7 @@ npm run dev
 
 <div align="center">
 
-⭐ If you like this project, consider giving it a star!
+⭐ If you found this portfolio interesting, consider giving it a star.
 
 Made with ❤️ by **Suvin Brettlee Roy**
 
