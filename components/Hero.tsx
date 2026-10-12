@@ -69,7 +69,7 @@ const Hero: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
                 Get In Touch
               </a>
               <a
-                href="/Suvin-Resume.pdf"
+                href="/Suvin_Brettlee_Roy_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`px-12 py-5 rounded-full border font-black uppercase tracking-[0.15em] text-sm transition-all hover:scale-105 flex items-center justify-center min-w-[200px] backdrop-blur-md ${
